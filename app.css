@@ -87,11 +87,16 @@ body {
     background-color: var(--almost-black);
     border: none;
     cursor: pointer;
+    transition: transform 0.3s ease;  /* Smooth transition */
 }
 
 .left-ele .add-btn i {
     color: var(--white);
     font-size: 2.2rem;
+}
+
+.add-btn:hover {
+    transform: scale(1.15); /* Increase size by 15% */
 }
 
 /* Notes Styling */
