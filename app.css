@@ -87,7 +87,8 @@ body {
     background-color: var(--almost-black);
     border: none;
     cursor: pointer;
-    transition: transform 0.3s ease;  /* Smooth transition */
+    transition: transform 0.3s ease;
+    /* Smooth transition */
 }
 
 .left-ele .add-btn i {
@@ -96,21 +97,27 @@ body {
 }
 
 .add-btn:hover {
-    transform: scale(1.15); /* Increase size by 15% */
+    transform: scale(1.15);
+    /* Increase size by 15% */
 }
 
 /* Notes Styling */
 .container .notes-container {
-    padding: 5.5rem 2rem;
+    /* padding: 5.5rem 2rem; */
+    display: flex;
 }
 
-.notes-container h1{
+.notes-container .empty_note-message {
+    display: none;
+}
+
+.notes-container .empty_note-message h1 {
     font-size: 2.7rem;
     color: var(--darker-white);
     margin-bottom: 10px;
 }
 
-.notes-container p {
+.notes-container .empty_note-message p {
     font-size: 1.3rem;
     color: var(--darker-white);
     line-height: 1.6;
@@ -124,4 +131,51 @@ body {
     color: var(--white);
     background-color: var(--almost-black);
     padding-top: 1px;
+}
+
+/* Notes Container */
+.notes-container .note-section .notes {
+    width: 10rem;
+    border-right: solid var(--dark-white) 1px;
+    height: 100%;
+}
+
+.note-section .notes h2 {
+    padding: 1.5rem .8rem .5rem;
+    color: var(--almost-black);
+    font-size: 1.65rem;
+    border-bottom: solid var(--dark-white) 1px;
+}
+
+/* .note-section .notes .note-lists {
+    padding: .5rem .7rem;
+} */
+
+.notes .note-lists li {
+    list-style: none;
+    border-bottom: solid var(--dark-white) 1px;
+    padding: .5rem .7rem;
+}
+
+.notes .note-lists li h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--almost-black);
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notes .note-lists li p {
+    font-size: .9rem;
+    color: var(--black);
+    font-weight: 400;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: .2rem;
 }
