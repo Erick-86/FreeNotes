@@ -9,6 +9,7 @@
     --dark-white: #E3E3E3;
     --darker-white: #CFCFCF;
     --almost-black: #1E1E1E;
+    --lighter-black: #2f2f2f;
     --black: #1E1E1E;
     --blue: #0A54FF;
     --light-blue: #00D4FE;
@@ -170,7 +171,6 @@ body {
 
 .notes .note-lists li p {
     font-size: .9rem;
-    color: var(--black);
     font-weight: 400;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -178,4 +178,5 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     margin-top: .2rem;
+    color: var(--lighter-black);
 }
